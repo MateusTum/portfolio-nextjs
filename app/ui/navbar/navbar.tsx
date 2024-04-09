@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import navLinks from "@/app/lib/navLinks";
 import styles from './navbar.module.scss';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +31,9 @@ export default function Navbar() {
             return (
               <li key={key}>
                 <div className="w-max relative">
-                  <a className={`uppercase text-lg ${styles["nav-link"]}`} href={`#${key}`}>
+                  <Link className={`uppercase text-lg ${styles["nav-link"]}`} href={`/#${key}`}>
                     {navLinks[key].title}
-                  </a>
+                  </Link>
                 </div>
               </li>
             );
