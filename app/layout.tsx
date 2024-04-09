@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Ropa_Sans } from "next/font/google";
+import "@/app/ui/styles/globals.scss";
+import Navbar from "@/app/ui/navbar/navbar";
+import Footer from "@/app/ui/footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const ropa = Ropa_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={ropa.className}>
+        <Navbar/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
