@@ -266,7 +266,7 @@ function ContactSection() {
             target="_blank"
             rel="noreferrer"
             className="text-neutral-400 flex"
-            href="https://wa.me/+55649995495430?text=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services.%20Can%20we%20discuss%20further%3F"
+            href="https://wa.me/+5564999549530?text=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services.%20Can%20we%20discuss%20further%3F"
           >
             <svg className="w-8 h-8" viewBox="0 0 32 32" width="32" height="32">
               <path d={siWhatsapp.path} fill="currentColor" />
