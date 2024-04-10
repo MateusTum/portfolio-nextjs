@@ -8,7 +8,7 @@ export default function AboutSection() {
       </div>
       <div className="w-full md:w-[75%] lg:w-[50%] px-2 my-1 mx-auto">
         <p className="text-lg text-justify">
-          Hello, I’m <span className="text-red-500">Mateus Rosa Tum</span>, a
+          Hello, I'm <span className="text-red-500">Mateus Rosa Tum</span>, a
           24-year-old software developer from
           <span className="text-red-500"> Brazil</span>. My journey in software
           development started in 2023, marking a significant shift from my law
