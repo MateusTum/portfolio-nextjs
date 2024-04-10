@@ -67,7 +67,7 @@ export default function PortfolioSection() {
         </ul>
 
         <div className="px-2 my-3 w-full text-center">
-          <Link href="#" className="text-xl text-white bg-neutral-800 p-2 rounded-md">Click here to check all my projects!</Link>
+          <Link href="#" className="text-xl text-white bg-neutral-800 p-2 rounded-md">Show all projects</Link>
         </div>
       </Section>
     );
