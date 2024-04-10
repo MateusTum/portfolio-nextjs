@@ -3,6 +3,7 @@ import { Ropa_Sans } from "next/font/google";
 import "@/app/ui/styles/globals.scss";
 import Navbar from "@/app/ui/navbar/navbar";
 import Footer from "@/app/ui/footer/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 const ropa = Ropa_Sans({ weight: "400", subsets: ["latin"] });
 
