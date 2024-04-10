@@ -16,7 +16,7 @@ export default function AboutSection() {
           abroad, leading me to pursue a career in technology. Today, I am
           dedicated to building innovative web solutions, specializing in{" "}
           <span className="text-red-500">Next.js</span> and{" "}
-          <span className="text-red-500">Django</span>. I'm passionate about
+          <span className="text-red-500">Django</span>. I&apos;m passionate about
           using my skills to create impactful and efficient digital experiences.
         </p>
       </div>
