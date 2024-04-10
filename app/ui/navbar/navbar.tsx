@@ -13,7 +13,7 @@ export default function Navbar() {
     <div className="fixed top-0 w-full bg-neutral-900/50 p-2 backdrop-blur-lg z-50">
       <div className="flex items-center max-h-[40px] overflow-hidden">
         <div className="absolute p-1 bg-black rounded-lg text-sm">
-          <span>Portfolio v2.0</span>
+          <span>Mateus Tum Dev</span>
         </div>
         <MenuIcon isOpen={isOpen} setIsOpen={setIsOpen} />
         {/* Large navbar */}
@@ -27,7 +27,10 @@ export default function Navbar() {
             return (
               <li key={key}>
                 <div className="w-max relative">
-                  <Link className={`uppercase text-lg ${styles["nav-link"]}`} href={`/#${key}`}>
+                  <Link 
+                  className={`uppercase text-lg ${styles["nav-link"]}`}
+                  href={`/#${key}`}
+                  >
                     {navLinks[key].title}
                   </Link>
                 </div>
@@ -48,9 +51,13 @@ export default function Navbar() {
             return (
               <li key={key}>
                 <div className="w-max relative my-2">
-                  <a className={`uppercase text-xl ${styles["nav-link"]}`} href={`#${key}`}>
+                  <Link 
+                  className={`uppercase text-xl ${styles["nav-link"]}`} 
+                  href={`/#${key}`}
+                  onClick={() => setIsOpen(false)}
+                  >
                     {navLinks[key].title}
-                  </a>
+                  </Link>
                 </div>
               </li>
             );
