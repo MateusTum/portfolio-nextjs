@@ -1,4 +1,3 @@
-import type { SimpleIcon } from "simple-icons";
 import {
   siReact,
   siPython,
@@ -18,16 +17,9 @@ import {
   siWhatsapp,
 } from "simple-icons/icons";
 
+import { mytech } from "@/app/lib/definitions";
+
 export default function MyWorkSection() {
-    interface mytech {
-      [key: string]: {
-        name: string;
-        description: string;
-        url: string;
-        icon: SimpleIcon;
-      };
-    }
-  
     const mytech: mytech = {
       JavaScript: {
         name: "JavaScript",
