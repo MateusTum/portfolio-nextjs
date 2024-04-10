@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import MenuIcon from './menuIcon';
 import navLinks from "@/app/lib/navLinks";
 import styles from './navbar.module.scss';
 import Link from 'next/link';
@@ -14,12 +15,7 @@ export default function Navbar() {
         <div className="absolute p-1 bg-black rounded-lg text-sm">
           <span>Portfolio v2.0</span>
         </div>
-        <button
-          className="mx-1 ms-auto text-white md:hidden"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? 'Close' : 'Menu'}
-        </button>
+        <MenuIcon isOpen={isOpen} setIsOpen={setIsOpen} />
         {/* Large navbar */}
         <nav
         className={`${
