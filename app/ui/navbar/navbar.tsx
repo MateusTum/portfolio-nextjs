@@ -51,8 +51,8 @@ export default function Navbar() {
           {Object.keys(navLinks).map((key) => {
             return (
               <li key={key}>
-                <div className="w-max relative">
-                  <a className={`uppercase text-lg ${styles["nav-link"]}`} href={`#${key}`}>
+                <div className="w-max relative my-2">
+                  <a className={`uppercase text-xl ${styles["nav-link"]}`} href={`#${key}`}>
                     {navLinks[key].title}
                   </a>
                 </div>
