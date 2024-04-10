@@ -1,9 +1,4 @@
-interface sectionProps {
-    children: React.ReactNode;
-    fullscreen?: boolean;
-    id: string;
-    classes?: string;
-  }
+import { sectionProps } from "@/app/lib/definitions";
 
 export default function Section({ children, id, fullscreen, classes }: sectionProps) {
     return (
