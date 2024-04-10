@@ -8,8 +8,8 @@ import PortfolioSection from "@/app/(home)/portfolio";
 import ContactSection from "@/app/(home)/contact";
 
 export const metadata: Metadata = {
-  title: "Mateus Tum Dev",
-  description: "Portfolio of Mateus Tum",
+  title: "Mateus Tum",
+  description: "Portfolio of Mateus Tum | Full-Stack Web Developer | Next.js & Django",
 };
 
 export default function Home() {
