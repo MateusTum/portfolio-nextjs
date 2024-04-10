@@ -77,7 +77,7 @@ export default function MyWorkSection() {
           {Object.keys(mytech).map((key) => (
             <li
               key={key}
-              className="mx-auto snap-center min-w-[64px] md:min-w-[92px] lg:min-w-[128px] h-[64px] md:h-[92px] lg:h-[128px] rounded-md flex items-center justify-center bg-neutral-900/25 backdrop-blur-lg sm:col-span-1"
+              className="mx-auto snap-center min-w-[64px] md:min-w-[92px] lg:min-w-[128px] h-[64px] md:h-[92px] lg:h-[128px] rounded-md flex items-center justify-center bg-neutral-800/25 backdrop-blur-lg sm:col-span-1"
             >
               <a href={mytech[key].url} target="_blank" rel="noreferrer">
                 <svg

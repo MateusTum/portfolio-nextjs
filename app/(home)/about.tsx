@@ -3,7 +3,7 @@ import Section from "@/app/ui/Section";
 export default function AboutSection() {
     return (
       <Section id="about">
-        <div className="w-full md:w-[75%] lg:w-[50%] text-4xl text-center bg-neutral-950/50  mx-auto rounded-md p-2">
+        <div className="w-full md:w-[75%] lg:w-[50%] text-4xl text-center bg-neutral-800/50  mx-auto rounded-md p-2">
           <h2>ABOUT ME</h2>
         </div>
         <div className="w-full md:w-[75%] lg:w-[50%] px-2 my-1 mx-auto">

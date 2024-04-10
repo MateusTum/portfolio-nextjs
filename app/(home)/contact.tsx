@@ -10,7 +10,7 @@ export default function ContactSection() {
         id="contact"
         classes="py-20 min-h-[50vh] bg-gradient-to-b from-black from-60% to-neutral-950/50"
       >
-        <div className="w-full md:w-[50%] text-4xl text-center bg-neutral-950/50  mx-auto rounded-md p-2">
+        <div className="w-full md:w-[50%] text-4xl text-center bg-neutral-800/50  mx-auto rounded-md p-2">
           <h2>CONTACT ME</h2>
         </div>
         <div className="p-2 grid grid-rows-3 gap-1 sm:gap-3">
