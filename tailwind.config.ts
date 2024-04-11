@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+        animation: {
+          'pulse-slow': 'pulse 3s linear infinite',  // Example of a slower pulse
+          'pulse-fast': 'pulse 1s linear infinite'   // Example of a faster pulse
+        }
+
     },
     container: {
       padding: {
