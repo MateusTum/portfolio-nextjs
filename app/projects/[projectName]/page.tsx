@@ -1,23 +1,23 @@
 import { MyProjects, FeaturedProjects } from "@/app/lib/data";
 
-import type {
-  // InferGetStaticPropsType,
-  // GetStaticProps,
-  GetStaticPaths,
-} from 'next'
+// import type {
+//   InferGetStaticPropsType,
+//   GetStaticProps,
+//   GetStaticPaths,
+// } from 'next'
 
 
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = Object.keys(FeaturedProjects).map((projectName) => ({
-    params: { projectName: projectName },
-  }));
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const paths = Object.keys(FeaturedProjects).map((projectName) => ({
+//     params: { projectName: projectName },
+//   }));
 
-  return {
-    paths,
-    fallback: true,
-  };
-};
+//   return {
+//     paths,
+//     fallback: true,
+//   };
+// };
 
 export default function ProjectPage({
   params,
