@@ -1,6 +1,8 @@
 import type { SimpleIcon } from "simple-icons";
 import { siInstagram, siLinkedin, siGithub } from "simple-icons/icons";
 
+import Link from "next/link";
+
 interface mySocialMedia {
   [key: string]: {
     icon: SimpleIcon;
@@ -27,8 +29,8 @@ export default function Footer() {
   return (
     <footer className="py-2 w-full border-t-gray-900 border-t-[0.1rem] bg-neutral-950 flex justify-center">
       <div className="container">
-        <div className="grid grid-cols-2 justify-center text-start">
-          <div className="col-span-3 sm:col-span-1 text-center sm:text-left">
+        <div className="grid grid-cols-4 justify-center text-start">
+          <div className="col-span-4 sm:col-span-1 text-center sm:text-left my-1">
             <span className="text-white text-xl">Mateus Tum Dev</span>
             <div className="flex items-center p-2 justify-center sm:justify-start">
               {Object.keys(mySocialMedia).map((key) => {
@@ -56,9 +58,51 @@ export default function Footer() {
               })}
             </div>
           </div>
-          {/* <div>
-            <span className="text-white text-xl">More</span>
-          </div> */}
+          
+          <div className="col-span-4 sm:col-span-1 text-left md:text-center justify-center my-1">
+            <div className="w-full text-center md:text-left">
+              <span className="text-white text-xl text-left">More</span>
+            </div>
+
+            <div className="grid grid-cols">
+            <Link className="text-neutral-500 text-center md:text-left" href="https://semver.org/">
+              Semantic Versioning
+            </Link>
+            <Link className="text-neutral-500 text-center md:text-left" href="https://portalufj.jatai.ufg.br/">
+              Universidade Federal de Jataí
+            </Link>
+
+            </div>
+
+          </div>
+
+          <div className="col-span-4 sm:col-span-1 text-left md:text-center justify-center my-1">
+
+            <div className="w-full text-center md:text-left">
+              <span className="text-white text-xl">Phone</span>
+            </div>
+
+            <div className="grid grid-cols text-center md:text-left">
+                <span className="text-neutral-500">
+                  +55 64 9-9954-9530
+                </span>
+            </div>
+
+          </div>
+
+          <div className="col-span-4 sm:col-span-1 text-left md:text-center justify-center my-1">
+
+            <div className="w-full text-center md:text-left">
+              <span className="text-white text-xl">E-mail</span>
+            </div>
+
+            <div className="grid grid-cols text-center md:text-left">
+                <span className="text-neutral-500">
+                  mateus.tum@icloud.com
+                </span>
+            </div>
+
+          </div>
           {/* <div>
             <span className="text-white text-xl">Contact</span>
             <div className="text-neutral-500 grid grid-rows">
@@ -82,7 +126,7 @@ export default function Footer() {
             <span className="text-white text-xl">Theme</span>
           </div> */}
         </div>
-        <div className="my-5 sm:my-0">
+        <div className="my-5 sm:my-0 col-span-2">
           <div className="text-center sm:text-left">
             <span className="text-neutral-500">Portfolio v2.0</span>
           </div>
