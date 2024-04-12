@@ -2,11 +2,10 @@ import Section from "@/app/ui/Section";
 import Image from "next/image";
 import Link from "next/link";
 
-import { featuredProjects } from "@/app/lib/data";
+import { FeaturedProjects } from "@/app/lib/data";
 
 import clsx from "clsx";
 
-import { siGithub } from "simple-icons";
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
 
 export default function PortfolioSection() {
@@ -22,27 +21,27 @@ export default function PortfolioSection() {
 
       <ul className="grid grid-rows md:grid-cols-2 lg:grid-cols-2 gap-4 px-2 lg:px-20 ">
         {/* Grid 1 */}
-        {Object.keys(featuredProjects).map((key) => {
+        {Object.keys(FeaturedProjects).map((key) => {
           return (
             <li
               key={key}
               className="flex-row items-center w-full h-[400px] sm:h-[300px] md:h-[400px] mx-auto rounded-lg overflow-hidden
               hover:ring ring-neutral-500/50"
             >
-              <Link href={featuredProjects[key].projectPagePath} className="">
+              <Link href={FeaturedProjects[key].projectPagePath} className="">
               <div className="bg-black h-4/5 w-full relative overflow-hidden ">
                 <Image
                   className="w-full h-full object-cover"
                   alt="social logo"
                   width={500}
                   height={500}
-                  src={featuredProjects[key].imagePath}
+                  src={FeaturedProjects[key].imagePath}
                 />
                 <div className="bg-black/25 absolute z-15 top-0 left-0 w-full h-full backdrop-blur-[1px]" />
                 <div className="absolute bottom-0 left-0 w-full flex items-center">
 
                     <span className="text-4xl px-1 text-white z-10 relative">
-                      {featuredProjects[key].name}
+                      {FeaturedProjects[key].name}
                     </span>
                     <span>
                       <ArrowTopRightOnSquareIcon width={26} height={26} className="z-20 relative text-white"/>
@@ -57,14 +56,14 @@ export default function PortfolioSection() {
                   className={clsx(
                     "absolute top-0 left-0 w-max h-[25px] m-2 rounded-lg",
                     {
-                      "bg-green-700": featuredProjects[key].isOpenSource,
-                      "bg-red-800": !featuredProjects[key].isOpenSource,
+                      "bg-green-700": FeaturedProjects[key].isOpenSource,
+                      "bg-red-800": !FeaturedProjects[key].isOpenSource,
                     }
                   )}
                 >
                   <span className="p-2">
                     Source:{" "}
-                    {featuredProjects[key].isOpenSource ? "Open" : "Closed"}
+                    {FeaturedProjects[key].isOpenSource ? "Open" : "Closed"}
                   </span>
                 </div>
 
@@ -92,7 +91,7 @@ export default function PortfolioSection() {
               <div className="bg-neutral-950 h-1/5 w-full">
                 <div>
                   <p className="px-2 text-neutral-300 text-lg">
-                    {featuredProjects[key].description}
+                    {FeaturedProjects[key].description}
                   </p>
                 </div>
               </div>
