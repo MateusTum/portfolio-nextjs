@@ -8,7 +8,7 @@ export default function Section({ children, id, fullscreen, classes }: sectionPr
           fullscreen ? "min-h-screen" : ""
         }`}
       >
-        <div className={`container w-full`}>{children}</div>
+        <div className={`container w-full relative`}>{children}</div>
       </section>
     );
   }
