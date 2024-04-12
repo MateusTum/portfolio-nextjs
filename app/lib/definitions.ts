@@ -7,24 +7,25 @@ export interface sectionProps {
   classes?: string;
 }
 
-export interface mytech {
-  [key: string]: {
-    name: string;
-    description: string;
-    url: string;
-    icon: SimpleIcon;
-  };
+export type TechName = string;
+
+export interface TechInfo {
+  name: string;
+  description: string;
+  url: string;
+  icon: SimpleIcon;
 }
 
-export interface myProjectsInterface {
-  [key: string]: {
-    name: string;
-    description: string;
-    imagePath: string;
-    imageAlt: string;
-    projectPagePath: string;
-    githubPath?: string;
-    websitePath?: string;
-    isOpenSource: boolean;
-  };
+export type ProjectName = string;
+
+export interface ProjectInfo {
+  name: string;
+  description: string;
+  imagePath: string;
+  imageAlt: string;
+  projectPagePath: string;
+  githubPath?: string;
+  websitePath?: string;
+  isOpenSource: boolean;
 }
+
