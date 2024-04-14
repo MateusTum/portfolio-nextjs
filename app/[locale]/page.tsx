@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 // Import sections
-import PresentationSection from "@/app/[lang]/(home)/presentation";
-import AboutSection from "@/app/[lang]/(home)/about";
-import MyWorkSection from "@/app/[lang]/(home)/mywork";
-import PortfolioSection from "@/app/[lang]/(home)/portfolio";
-import ContactSection from "@/app/[lang]/(home)/contact";
+import PresentationSection from "@/app/[locale]/(home)/presentation";
+import AboutSection from "@/app/[locale]/(home)/about";
+import MyWorkSection from "@/app/[locale]/(home)/mywork";
+import PortfolioSection from "@/app/[locale]/(home)/portfolio";
+import ContactSection from "@/app/[locale]/(home)/contact";
 
 
 // Internationalization
