@@ -8,7 +8,6 @@ import clsx from "clsx";
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
 
-import { Translations } from "@/app/lib/definitions";
 
 export default function PortfolioSection({ t }: any) {
   return (
