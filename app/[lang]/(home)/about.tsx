@@ -1,7 +1,5 @@
 import Section from "@/app/ui/Section";
 
-import { Translations } from "@/app/lib/definitions";
-
 export default function AboutSection({ t }: any) {
 
   return (
