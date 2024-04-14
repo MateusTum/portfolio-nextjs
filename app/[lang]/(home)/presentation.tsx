@@ -1,12 +1,12 @@
 import Section from "@/app/ui/Section";
 import RotatingCube from "@/app/ui/cube/Cube";
 
-export default function PresentationSection() {
+export default function PresentationSection({ t }: any) {
     return (
       <Section id="home" fullscreen={true} classes="pt-[40px]">
         <div className="text-4xl uppercase mt-9">
           <h1>Mateus Tum</h1>
-          <h2>Software Developer</h2>
+          <h2>{t('occupation')}</h2>
           <h2>Frontend | Backend</h2>
           <h2>Next.js | Django</h2>
         </div>

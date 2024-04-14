@@ -8,15 +8,17 @@ import clsx from "clsx";
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
 
-export default function PortfolioSection() {
+import { Translations } from "@/app/lib/definitions";
+
+export default function PortfolioSection({ t }: any) {
   return (
     <Section id="portfolio" classes="bg-neutral-900/25">
       <div className="text-4xl text-center mx-auto p-2 my-2">
-        <h2>MY PORTFOLIO</h2>
+        <h2 className="uppercase">{t('my-portfolio')}</h2>
       </div>
 
       <div className="px-2 lg:px-20">
-        <h3 className="text-2xl text-neutral-400">Featured projects</h3>
+        <h3 className="text-2xl text-neutral-400">{t('featured-projects')}</h3>
       </div>
 
       <ul className="grid grid-rows md:grid-cols-2 lg:grid-cols-2 gap-4 px-2 lg:px-20 ">
@@ -62,8 +64,7 @@ export default function PortfolioSection() {
                   )}
                 >
                   <span className="p-2">
-                    Source:{" "}
-                    {FeaturedProjects[key].isOpenSource ? "Open" : "Closed"}
+                    {FeaturedProjects[key].isOpenSource ? "Open source" : "Closed source"}
                   </span>
                 </div>
 
@@ -106,7 +107,7 @@ export default function PortfolioSection() {
           href="/projects"
           className="text-xl text-white bg-neutral-800 p-2 rounded-md"
         >
-          Show all projects
+          {t('show-all-projects')}
         </Link>
       </div>
     </Section>

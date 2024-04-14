@@ -1,0 +1,37 @@
+{
+  "Metadata": {
+    "description": "Mateus Rosa Tum is a Full-Stack Web Developer | Next.js & Django | From Brazil"
+  },
+  "Home": {
+    "occupation": "Software Developer",
+    "about-me": "About Me",
+    "hello": "Hello, I'm",
+    "age": "a 24-year-old software developer from",
+    "brazil": "Brazil",
+    "journey": "My journey in software development started in 2023, marking a significant shift from my law school background. This transition was inspired by my experiences abroad, leading me to pursue a career in technology. Today, I am dedicated to building innovative web solutions, specializing in",
+    "and": "and",
+    "passionate": "I'm passionate about using my skills to create impactful and efficient digital experiences.",
+
+    "my-portfolio": "My Portfolio",
+    "featured-projects": "Featured projects",
+    "show-all-projects": "Show all projects",
+
+    "contact-me": "Contact Me",
+    "email": "Email",
+    "phone-number": "Phone Number",
+    "whatsapp": "Click here to send me a message on WhatsApp"
+  },
+
+  "Footer": {
+    "email": "Email",
+    "more": "More",
+    "phone": "Phone Number"
+  },
+
+  "Nav-links": {
+    "home": "Home",
+    "about": "About me",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  }
+}

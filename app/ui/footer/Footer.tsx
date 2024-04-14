@@ -3,6 +3,10 @@ import { siInstagram, siLinkedin, siGithub } from "simple-icons/icons";
 
 import Link from "next/link";
 
+// Internationalization
+import {useTranslations} from 'next-intl';
+
+
 interface mySocialMedia {
   [key: string]: {
     icon: SimpleIcon;
@@ -26,6 +30,7 @@ const mySocialMedia: mySocialMedia = {
 };
 
 export default function Footer() {
+  const t = useTranslations('Footer');
   return (
     <footer className="py-2 w-full border-t-gray-900 border-t-[0.1rem] bg-neutral-950 flex justify-center">
       <div className="container">
@@ -61,7 +66,7 @@ export default function Footer() {
           
           <div className="col-span-4 sm:col-span-1 text-left md:text-center justify-center my-1">
             <div className="w-full text-center md:text-left">
-              <span className="text-white text-xl text-left">More</span>
+              <span className="text-white text-xl text-left">{t('more')}</span>
             </div>
 
             <div className="grid grid-cols">
@@ -79,7 +84,7 @@ export default function Footer() {
           <div className="col-span-4 sm:col-span-1 text-left md:text-center justify-center my-1">
 
             <div className="w-full text-center md:text-left">
-              <span className="text-white text-xl">Phone</span>
+              <span className="text-white text-xl">{t('phone')}</span>
             </div>
 
             <div className="grid grid-cols text-center md:text-left">

@@ -4,18 +4,18 @@ import {
   siWhatsapp,
 } from "simple-icons/icons";
 
-export default function ContactSection() {
+export default function ContactSection({ t }: any) {
     return (
       <Section
         id="contact"
         classes="py-20 min-h-[50vh] bg-gradient-to-b from-black from-60% to-neutral-950/50"
       >
         <div className="w-full md:w-[50%] text-4xl text-center bg-neutral-800/50  mx-auto rounded-md p-2">
-          <h2>CONTACT ME</h2>
+          <h2 className="uppercase">{t('contact-me')}</h2>
         </div>
         <div className="p-2 grid grid-rows-3 gap-1 sm:gap-3">
           <div>
-            <h3 className="text-3xl">Email</h3>
+            <h3 className="text-3xl">{t('email')}</h3>
             <a
               className="text-neutral-400 text-xl"
               href="mailto:mateus.tum@icloud.com"
@@ -24,7 +24,7 @@ export default function ContactSection() {
             </a>
           </div>
           <div>
-            <h3 className="text-3xl">Phone Number</h3>
+            <h3 className="text-3xl">{t('phone-number')}</h3>
             <a className="text-neutral-400 text-xl" href="tel:+5564999549530">
               +55 (64) 9-9954-9530
             </a>
@@ -41,7 +41,7 @@ export default function ContactSection() {
               <svg className="w-8 h-8" viewBox="0 0 32 32" width="32" height="32">
                 <path d={siWhatsapp.path} fill="currentColor" />
               </svg>
-              Click here to send me a message on WhatsApp
+              {t('whatsapp')}
             </a>
           </div>
         </div>
