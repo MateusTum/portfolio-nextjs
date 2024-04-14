@@ -38,5 +38,9 @@
     "about": "Sobre mim",
     "portfolio": "Portfólio",
     "contact": "Contato"
+  },
+
+  "Portfolio": {
+    "title": "Portfólio | Em construção"
   }
 }

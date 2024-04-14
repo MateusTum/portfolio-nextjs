@@ -33,5 +33,9 @@
     "about": "About me",
     "portfolio": "Portfolio",
     "contact": "Contact"
+  },
+
+  "Portfolio": {
+    "title": "Portfolio | (WIP)"
   }
 }

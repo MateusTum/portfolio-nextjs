@@ -14,6 +14,11 @@ import {
       pt: '/projetos'
     },
 
+    '/not-found': {
+        en: '/not-found',
+        pt: '/nao-econtrado'
+      },
+
     '/projects/[projectName]': {
       en: '/projects/[projectName]',
       pt: '/projetos/[projectName]'
