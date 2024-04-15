@@ -30,7 +30,8 @@ export default function PortfolioSection({ t }: any) {
             >
               <Link
                 href={{
-                  pathname: FeaturedProjects[key].projectPagePath,
+                  pathname: '/projects/[projectName]',
+                  params: {projectName: FeaturedProjects[key].projectPagePath}
                 }}
               >
                 <div className="bg-black h-4/5 w-full relative overflow-hidden ">

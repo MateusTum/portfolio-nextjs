@@ -4,7 +4,7 @@ import { useState } from "react";
 import MenuIcon from "./menuIcon";
 import navLinks from "@/app/lib/navLinks";
 import styles from "./navbar.module.scss";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 import React from "react";
 
@@ -49,8 +49,8 @@ export default function Navbar() {
                 <li key={key}>
                   <div className="w-max relative">
                     <Link
+                      href={navLinks[key].href}
                       className={`uppercase text-lg ${styles["nav-link"]}`}
-                      href={`/#${key}`}
                     >
                       {currentLocale === "en" && navLinks[key].title}
                       {currentLocale === "pt" && navLinks[key].titulo}
@@ -63,7 +63,7 @@ export default function Navbar() {
         </nav>
         {currentLocale === "en" && (
           <div className="hidden sm:block w-max absolute right-[15px]">
-            <Link href="/pt">
+            <Link locale='pt' href='/'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-7 h-7"
@@ -84,7 +84,7 @@ export default function Navbar() {
         )}
         {currentLocale === "pt" && (
           <div className="hidden sm:block w-max absolute right-[15px]">
-            <Link href="/en">
+            <Link locale='en' href='/'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-7 h-7"
@@ -114,7 +114,7 @@ export default function Navbar() {
                 <div className="w-max relative my-2">
                   <Link
                     className={`uppercase text-xl ${styles["nav-link"]}`}
-                    href={`/#${key}`}
+                    href={navLinks[key].href}
                     onClick={() => setIsOpen(false)}
                   >
                     {currentLocale === "en" && navLinks[key].title}
@@ -126,7 +126,7 @@ export default function Navbar() {
           })}
           {currentLocale === "en" && (
             <li className="w-max relative">
-              <Link href="/pt">
+            <Link locale='pt' href='/'>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-7"
@@ -147,7 +147,7 @@ export default function Navbar() {
           )}
           {currentLocale === "pt" && (
             <li className="w-max relative">
-              <Link href="/en">
+            <Link locale='en' href='/'>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-7"

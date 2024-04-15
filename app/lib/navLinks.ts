@@ -9,22 +9,22 @@ const navLinks: any = {
     home: {
         title: 'Home',
         titulo: 'Início',
-        href: 'home',
+        href: '/#home',
     },
     about: {
         title: 'About me',
         titulo: 'Sobre mim',
-        href: 'about',
+        href: '/#about',
     },
     portfolio: {
         title: 'Portfolio',
         titulo: 'Portfólio',
-        href: 'portfolio',
+        href: '/#portfolio',
     },
     contact: {
         title: 'Contact',
         titulo: 'Contato',
-        href: 'contact',
+        href: '/#contact',
     }
 }
 
