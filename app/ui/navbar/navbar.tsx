@@ -34,8 +34,11 @@ export default function Navbar() {
     <div className="fixed top-0 w-full bg-neutral-900/50 p-2 backdrop-blur-lg z-50">
       <div className="flex items-center max-h-[40px] overflow-hidden">
         <div className="absolute p-1 bg-black rounded-lg text-sm">
-          <span>Mateus Tum Dev</span>
+          <Link href="/">
+            <span>Mateus Tum Dev</span>
+          </Link>
         </div>
+
         <MenuIcon isOpen={isOpen} setIsOpen={setIsOpen} />
         {/* Large navbar */}
         <nav
@@ -62,8 +65,8 @@ export default function Navbar() {
           </ul>
         </nav>
         {currentLocale === "en" && (
-          <div className="hidden sm:block w-max absolute right-[15px]">
-            <Link locale='pt' href='/'>
+          <div className="hidden md:block w-max absolute right-[15px]">
+            <Link locale="pt" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-7 h-7"
@@ -83,8 +86,8 @@ export default function Navbar() {
           </div>
         )}
         {currentLocale === "pt" && (
-          <div className="hidden sm:block w-max absolute right-[15px]">
-            <Link locale='en' href='/'>
+          <div className="hidden md:block w-max absolute right-[15px]">
+            <Link locale="en" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-7 h-7"
@@ -126,7 +129,7 @@ export default function Navbar() {
           })}
           {currentLocale === "en" && (
             <li className="w-max relative">
-            <Link locale='pt' href='/'>
+              <Link locale="pt" href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-7"
@@ -147,7 +150,7 @@ export default function Navbar() {
           )}
           {currentLocale === "pt" && (
             <li className="w-max relative">
-            <Link locale='en' href='/'>
+              <Link locale="en" href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-7"
