@@ -98,7 +98,7 @@ export default function Footer() {
           <div className="col-span-4 sm:col-span-1 text-left md:text-center justify-center my-1">
 
             <div className="w-full text-center md:text-left">
-              <span className="text-white text-xl">E-mail</span>
+              <span className="text-white text-xl">{t('email')}</span>
             </div>
 
             <div className="grid grid-cols text-center md:text-left">

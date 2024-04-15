@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="flex-row align-center">
       <PresentationSection t={t}/>
-
+ 
       <AboutSection t={t}/>
 
       <MyWorkSection/>
