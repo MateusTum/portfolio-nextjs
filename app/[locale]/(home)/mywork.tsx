@@ -6,11 +6,11 @@ export default function MyWorkSection() {
   
     return (
       <section id="my-tech" className="w-full my-20 px-4 flex justify-center">
-        <ul className="flex overflow-x-auto snap-x snap-mandatory gap-4 sm:grid sm:grid-cols-8">
+        <ul className="flex overflow-x-auto snap-x snap-mandatory gap-4 sm:grid sm:grid-cols-9">
           {Object.keys(FeaturedTech).map((key) => (
             <li
               key={key}
-              className="mx-auto snap-center min-w-[64px] md:min-w-[92px] lg:min-w-[128px] h-[64px] md:h-[92px] lg:h-[128px] rounded-md flex items-center justify-center bg-neutral-800/25 backdrop-blur-lg sm:col-span-1"
+              className="mx-auto snap-center min-w-[64px] md:min-w-[84px] lg:min-w-[128px] h-[64px] md:h-[84px] lg:h-[128px] rounded-md flex items-center justify-center bg-neutral-800/25 backdrop-blur-lg sm:col-span-1"
             >
               <a href={FeaturedTech[key].url} target="_blank" rel="noreferrer">
                 <svg

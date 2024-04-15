@@ -164,6 +164,7 @@ export const TechList: Record<TechName, TechInfo> = {
 };
 
 export const FeaturedTech: Record<TechName, TechInfo> = {
+  TypeScript: TechList.TypeScript,
   JavaScript: TechList.JavaScript,
   Nextjs: TechList.Nextjs,
   React: TechList.React,
