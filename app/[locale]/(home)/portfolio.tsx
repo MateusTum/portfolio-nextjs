@@ -1,6 +1,6 @@
 import Section from "@/app/ui/Section";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from '@/navigation';
 
 import { FeaturedProjects } from "@/app/lib/data";
 
