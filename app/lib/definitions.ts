@@ -27,5 +27,7 @@ export interface ProjectInfo {
   githubPath?: string;
   websitePath?: string;
   isOpenSource: boolean;
+  version: string;
+  techs: TechName[];
 }
 

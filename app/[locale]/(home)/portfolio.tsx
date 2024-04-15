@@ -1,12 +1,12 @@
 import Section from "@/app/ui/Section";
 import Image from "next/image";
-import { Link } from '@/navigation';
-
-import { FeaturedProjects } from "@/app/lib/data";
-
 import clsx from "clsx";
 
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+// Custom next-intl link wrapper
+import { Link } from "@/navigation";
+
+// Tech icons
+import { TechList, FeaturedProjects } from "@/app/lib/data";
 
 export default function PortfolioSection({ t }: any) {
   return (
@@ -19,22 +19,24 @@ export default function PortfolioSection({ t }: any) {
         <h3 className="text-2xl text-neutral-400">{t("featured-projects")}</h3>
       </div>
 
-      <ul className="grid grid-rows md:grid-cols-2 lg:grid-cols-2 gap-4 px-2 lg:px-20 ">
+      <ul className="grid grid-rows md:grid-cols-2 lg:grid-cols-2 gap-4 px-2 lg:px-20">
         {/* Grid 1 */}
         {Object.keys(FeaturedProjects).map((key) => {
           return (
             <li
               key={key}
-              className="flex-row items-center w-full h-[400px] sm:h-[300px] md:h-[400px] mx-auto rounded-lg overflow-hidden
+              className="flex-row items-center w-full h-[450px] sm:h-[400px] md:h-[450px] mx-auto rounded-lg overflow-hidden
               hover:ring ring-neutral-500/50"
             >
               <Link
                 href={{
-                  pathname: '/projects/[projectName]',
-                  params: {projectName: FeaturedProjects[key].projectPagePath}
+                  pathname: "/projects/[projectName]",
+                  params: {
+                    projectName: FeaturedProjects[key].projectPagePath,
+                  },
                 }}
               >
-                <div className="bg-black h-4/5 w-full relative overflow-hidden ">
+                <div className="bg-black h-[80%] w-full relative overflow-hidden ">
                   <Image
                     className="w-full h-full object-cover"
                     alt={FeaturedProjects[key].imageAlt}
@@ -46,6 +48,9 @@ export default function PortfolioSection({ t }: any) {
                   <div className="absolute bottom-0 left-0 w-full flex items-center">
                     <span className="text-4xl px-1 text-white z-10 relative">
                       {FeaturedProjects[key].name}
+                    </span>
+                    <span className="text-lg px-1 text-white z-10 relative rounded-md">
+                      {FeaturedProjects[key].version}
                     </span>
                     <div className="w-full h-[100%] absolute top-0 left-0 bg-gradient-to-t from-25% from-black/50 to-transparent z-5" />
                   </div>
@@ -60,16 +65,33 @@ export default function PortfolioSection({ t }: any) {
                       }
                     )}
                   >
-                    <span className="p-2">
+                    <span className="p-2 text-sm">
                       {FeaturedProjects[key].isOpenSource
                         ? "Open source"
                         : "Closed source"}
                     </span>
                   </div>
                 </div>
-                <div className="bg-neutral-950 h-1/5 w-full">
+                <div className="bg-neutral-950 h-[20%] w-full">
+                  <ul className="flex">
+                    {Object.entries(FeaturedProjects[key].techs).map(
+                      ([key, value]) => (
+                        <li
+                          key={key}
+                          className="mx-auto m-1 rounded-md overflow-hidden"
+                        >
+                          <svg viewBox="-4 -4 32 32" width="32" height="32">
+                            <path
+                              d={TechList[value].icon.path}
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </li>
+                      )
+                    )}
+                  </ul>
                   <div>
-                    <p className="px-2 text-neutral-300 text-lg">
+                    <p className="px-2 text-neutral-300 text-md text-lg md:text-md">
                       {FeaturedProjects[key].description}
                     </p>
                   </div>

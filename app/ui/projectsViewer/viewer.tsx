@@ -4,13 +4,13 @@ import Project from "./project";
 
 export default function projectsViewer() {
   const sortFilters = ["Latest", "Oldest", "Version"];
-  const sourceArray = ["Any", "Open", "Closed"];
+  const sourceArray = ["All", "Open", "Closed"];
 
   return (
 
       <div className="flex w-full rounded-md overflow-hidden my-4">
 
-        <div className="hidden sm:block w-1/6 flex-row text-lg bg-neutral-950">
+        <div className="hidden w-1/6 flex-row text-lg bg-neutral-950">
 
           <div className="p-2">
             <div className="text-center mx-auto bg-red-700 px-2 rounded-md w-max h-min my-1">
@@ -68,9 +68,9 @@ export default function projectsViewer() {
         </div>
 
         {/* Projects div */}
-        <div className="flex flex-col w-full sm:w-5/6">
-          <ul className="grid grid-cols grid-rows bg-neutral-900 gap-4 p-2
-          sm:grid-cols-4 sm:grid-rows-3">
+        <div className="flex flex-col w-full">
+          <ul className="grid grid-cols grid-rows-3 bg-neutral-900 gap-4 p-2
+          sm:grid-cols-3">
           {Object.entries(MyProjects).map(([ProjectName, ProjectInfo]) => (
             <Project key={ProjectName} project={ProjectInfo} />
           ))}
