@@ -37,7 +37,7 @@ export default function PortfolioSection({ t }: any) {
                 <div className="bg-black h-4/5 w-full relative overflow-hidden ">
                   <Image
                     className="w-full h-full object-cover"
-                    alt="social logo"
+                    alt={FeaturedProjects[key].imageAlt}
                     width={500}
                     height={500}
                     src={FeaturedProjects[key].imagePath}
@@ -47,19 +47,10 @@ export default function PortfolioSection({ t }: any) {
                     <span className="text-4xl px-1 text-white z-10 relative">
                       {FeaturedProjects[key].name}
                     </span>
-                    <span>
-                      <ArrowTopRightOnSquareIcon
-                        width={26}
-                        height={26}
-                        className="z-20 relative text-white"
-                      />
-                    </span>
-
                     <div className="w-full h-[100%] absolute top-0 left-0 bg-gradient-to-t from-25% from-black/50 to-transparent z-5" />
                   </div>
 
                   {/* SOURCE INFO */}
-
                   <div
                     className={clsx(
                       "absolute top-0 left-0 w-max h-[25px] m-2 rounded-lg",
@@ -75,26 +66,6 @@ export default function PortfolioSection({ t }: any) {
                         : "Closed source"}
                     </span>
                   </div>
-
-                  {/* GITHUB ICON */}
-
-                  {/* {featuredProjects[key].githubPath && (
-                  <div className="absolute top-0 right-0 m-2 rounded-lg">
-                    <a
-                      href={featuredProjects[key].name}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="w-10 h-10 inline-block text-white" // Adjust the width and height as needed
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
-                        className="w-full h-full hover:ring ring-red-500 rounded-full animate-pulse-slow"
-                      >
-                        <path d={siGithub.path} fill="current" />
-                      </svg>
-                    </a>
-                  </div>
-                )} */}
                 </div>
                 <div className="bg-neutral-950 h-1/5 w-full">
                   <div>
