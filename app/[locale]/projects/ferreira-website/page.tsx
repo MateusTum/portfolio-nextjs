@@ -7,14 +7,14 @@ export default function ProjectPage() {
     <>
       <div>
         <h1 className="text-4xl text-center uppercase p-2">
-          Ferreira's website - WIP
+          Ferreira&apos;s website - WIP
         </h1>
       </div>
       <section className="w-full">
       <div className="rounded-md mt-5 p-2 flex items-center justify-center">
         <div className="bg-neutral-950 w-max p-2 rounded-md">
           <p className="text-justify text-lg">
-            Attorney's office website.
+            Attorney&apos;s office website.
           </p>
         </div>
       </div>
