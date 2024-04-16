@@ -10,7 +10,7 @@ import { TechList, FeaturedProjects } from "@/app/lib/data";
 
 export default function PortfolioSection({ t }: any) {
   return (
-    <Section id="portfolio" classes="bg-neutral-900/25">
+    <Section id="portfolio" classes="bg-neutral-900/25 relative">
       <div className="text-4xl text-center mx-auto p-2 my-2">
         <h2 className="uppercase">{t("my-portfolio")}</h2>
       </div>
@@ -72,7 +72,7 @@ export default function PortfolioSection({ t }: any) {
                     </span>
                   </div>
                 </div>
-                <div className="bg-neutral-950 h-[20%] w-full">
+                <div className="bg-neutral-950 h-[20%] w-full border border-neutral-800 rounded-b-lg">
                   <ul className="flex">
                     {Object.entries(FeaturedProjects[key].techs).map(
                       ([key, value]) => (
@@ -90,7 +90,7 @@ export default function PortfolioSection({ t }: any) {
                       )
                     )}
                   </ul>
-                  <div>
+                  <div className="border-t border-t-neutral-800">
                     <p className="px-2 text-neutral-300 text-md text-lg md:text-md">
                       {FeaturedProjects[key].description}
                     </p>

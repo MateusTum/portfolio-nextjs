@@ -70,7 +70,7 @@ export default function projectsViewer() {
         {/* Projects div */}
         <div className="flex flex-col w-full">
           <ul className="grid grid-cols grid-rows-3 bg-neutral-900 gap-4 p-2
-          sm:grid-cols-3">
+          sm:grid-cols-2 lg:grid-cols-3">
           {Object.entries(MyProjects).map(([ProjectName, ProjectInfo]) => (
             <Project key={ProjectName} project={ProjectInfo} />
           ))}

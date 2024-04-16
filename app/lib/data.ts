@@ -26,48 +26,60 @@ import {
 export const MyProjects: Record<ProjectName, ProjectInfo> = {
   social: {
     name: "Social",
-    description:
-      "Social media web app.",
+    description: "Social media web app.",
     imagePath: "/social.webp",
     imageAlt: "Social logo",
     projectPagePath: "social",
     githubPath: "https://github.com/MateusTum/social",
     isOpenSource: true,
-    version: '1.0.0-alpha',
-    techs: ["Nextjs", "Django", "TypeScript", "PostgreeSql", "Sass", "TailwindCSS"]
+    version: "1.0.0-alpha",
+    techs: [
+      "Nextjs",
+      "Django",
+      "TypeScript",
+      "PostgreeSql",
+      "Sass",
+      "TailwindCSS",
+    ],
   },
   hais: {
     name: "HAIS",
-    description:
-      "Face recognition web app.",
+    description: "Face recognition web app.",
     imagePath: "/hais.webp",
     imageAlt: "HAIS logo",
     projectPagePath: "hais",
     isOpenSource: false,
-    version: '1.0.0-alpha',
-    techs: ["Nextjs", "Django", "JavaScript", "MongoDB", "Sass", "TailwindCSS"]
+    version: "1.0.0-alpha",
+    techs: ["Nextjs", "Django", "JavaScript", "MongoDB", "Sass", "TailwindCSS"],
   },
   taskManager: {
     name: "Task manager",
     description: "A webapp used to store and manage tasks.",
     imagePath: "/taskmanager.webp",
     imageAlt: "Task manager logo",
-    projectPagePath: "taskManager",
+    projectPagePath: "task-manager",
     githubPath: "https://github.com/MateusTum/task-manager",
     isOpenSource: true,
-    version: '1.0.0-alpha',
-    techs: ["Nextjs", "Django", "TypeScript", "PostgreeSql", "Sass", "TailwindCSS"]
+    version: "1.0.0-alpha",
+    techs: [
+      "Nextjs",
+      "Django",
+      "TypeScript",
+      "PostgreeSql",
+      "Sass",
+      "TailwindCSS",
+    ],
   },
   ferreiraWebsite: {
     name: "Ferreira's website",
     description: "A lawyer's website with blog functionality.",
     imagePath: "/isaferreira.png",
     imageAlt: "Ferreira's website logo",
-    projectPagePath: "ferreiraWebsite",
+    projectPagePath: "ferreira-website",
     websitePath: "https://isabellaferreira.adv.br",
     isOpenSource: false,
-    version: '1.0.6-beta',
-    techs: ["Nextjs", "JavaScript", "SQLite", "Sass", "TailwindCSS"]
+    version: "1.0.6-beta",
+    techs: ["Nextjs", "JavaScript", "SQLite", "Sass", "TailwindCSS"],
   },
 };
 

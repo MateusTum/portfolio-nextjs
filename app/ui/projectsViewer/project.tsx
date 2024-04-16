@@ -29,7 +29,7 @@ class Project extends Component<ProjectProps> {
             params: { projectName: project.projectPagePath },
           }}
         >
-          <div className="bg-black h-4/6 w-full relative overflow-hidden ">
+          <div className="bg-black h-[75%] w-full relative overflow-hidden ">
             <Image
               className="w-full h-full object-cover"
               alt={project.imageAlt}
@@ -38,7 +38,7 @@ class Project extends Component<ProjectProps> {
               src={project.imagePath}
             />
             <div className="bg-black/25 absolute z-15 top-0 left-0 w-full h-full backdrop-blur-[1px]" />
-            <div className="absolute bottom-0 left-0 w-full flex items-end">
+            <div className="absolute bottom-0 left-0 w-full flex">
               <span className="text-2xl px-1 text-white z-10 relative">
                 {project.name}
               </span>
@@ -64,7 +64,7 @@ class Project extends Component<ProjectProps> {
               </span>
             </div>
           </div>
-          <div className="bg-neutral-950 h-1/6 w-full">
+          <div className="bg-neutral-950 h-[25%] w-full border border-neutral-800 rounded-b-lg">
             <ul className="flex">
               {Object.entries(project.techs).map(([key, value]) => (
                 <li
@@ -77,10 +77,8 @@ class Project extends Component<ProjectProps> {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="bg-neutral-950 h-2/6 w-full">
-            <div>
-              <p className="px-2 text-neutral-300 text-md">
+            <div className="border-t border-t-neutral-800">
+              <p className="px-2 text-neutral-300 text-md text-lg md:text-md">
                 {project.description}
               </p>
             </div>
