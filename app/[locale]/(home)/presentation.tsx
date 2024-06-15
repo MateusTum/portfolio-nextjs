@@ -10,7 +10,6 @@ export default function PresentationSection({ t }: any) {
           <h2>{t('occupation')}</h2>
           <h2>Frontend | Backend</h2>
           <h2>Next.js | Django</h2>
-          <Link href="https://www.oort.com.br/" target="_blank" className="text-red-500">OORT Tec.</Link>
         </div>
         <div className="absolute w-full sm:w-[400px] h-[300px] bottom-0 right-0">
           <RotatingCube />
