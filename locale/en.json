@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "description": "Mateus Rosa Tum is a Full-Stack Web Developer | Next.js & Django | From Brazil"
+    "description": "Mateus Rosa Tum is a Full-Stack Web Developer | From Brazil"
   },
   "Home": {
     "occupation": "Software Developer",
@@ -8,9 +8,7 @@
     "hello": "Hello, I'm",
     "age": "a 24-year-old software developer from",
     "brazil": "Brazil",
-    "journey": "My journey in software development started in 2023, marking a significant shift from my law school background. This transition was inspired by my experiences abroad, leading me to pursue a career in technology. Today, I am dedicated to building innovative web solutions, specializing in",
-    "and": "and",
-    "oort": "I work as a full-stack software developer at OORT Technologies.",
+    "journey": "My journey in software development started in 2023, marking a significant shift from my law school background. This transition was inspired by my experiences abroad, leading me to pursue a career in technology. Today, I am dedicated to building innovative web solutions, adopting the latest technologies and best practices using AGILE methodologies.",
 
     "my-portfolio": "My Portfolio",
     "featured-projects": "Featured projects",

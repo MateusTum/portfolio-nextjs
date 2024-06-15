@@ -11,8 +11,6 @@ export default function AboutSection({ t }: any) {
         <p className="text-lg text-justify">
           {t('hello')}<span className="text-red-500"> Mateus Rosa Tum</span>,{" "}{t('age')}
           <span className="text-red-500">{" "}{t('brazil')}</span>.{" "}{t('journey')}{" "}
-          <span className="text-red-500">Next.js</span>{" "}{t('and')}{" "}
-          <span className="text-red-500">Django</span>. {t('oort')}
         </p>
       </div>
     </Section>

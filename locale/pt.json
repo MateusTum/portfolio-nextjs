@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "description": "Mateus Rosa Tum é um desenvolvedor web full-stack, brasileiro, de Jataí - Goiás | Next.js & Django | Website | Lojas virtuais | Automação"
+    "description": "Mateus Rosa Tum é um desenvolvedor web full-stack, brasileiro, de Jataí - Goiás | Website | Lojas virtuais | Automação"
   },
   "Home": {
     "occupation": "Desenvolvedor de Software",
@@ -10,9 +10,7 @@
     "hello": "Olá, sou",
     "age": "um desenvolvedor de software de 24 anos do",
     "brazil": "Brasil",
-    "journey": "Minha jornada no desenvolvimento de software começou em 2023, marcando uma mudança significativa da minha formação em direito. Essa transição foi inspirada pelas minhas experiências no exterior, levando-me a seguir uma carreira na tecnologia. Hoje, estou dedicado a construir soluções web inovadoras, especializando-me em",
-    "and": "e",
-    "oort": "Atualmente sou um desenvolvedor full-stack na OORT Tecnologias.",
+    "journey": "Minha jornada no desenvolvimento de software começou em 2023, marcando uma mudança significativa da minha formação em direito. Essa transição foi inspirada pelas minhas experiências no exterior, levando-me a seguir uma carreira na tecnologia. Hoje, estou dedicado a construir soluções web inovadoras, utilizando tecnologias modernas e práticas de desenvolvimento ágeis.",
 
     "my-portfolio": "Meu Portfólio",
     "featured-projects": "Projetos em destaque",

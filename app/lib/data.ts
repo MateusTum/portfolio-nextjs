@@ -21,27 +21,30 @@ import {
   siSqlite,
   siPostgresql,
   siMongodb,
+  siAmazonaws,
+  siFlutter,
+  siSpringboot,
 } from "simple-icons/icons";
 
 export const MyProjects: Record<ProjectName, ProjectInfo> = {
-  social: {
-    name: "Social",
-    description: "Social media web app.",
-    imagePath: "/social.webp",
-    imageAlt: "Social logo",
-    projectPagePath: "social",
-    githubPath: "https://github.com/MateusTum/social",
-    isOpenSource: true,
-    version: "1.0.0-alpha",
-    techs: [
-      "Nextjs",
-      "Django",
-      "TypeScript",
-      "PostgreeSql",
-      "Sass",
-      "TailwindCSS",
-    ],
-  },
+  // social: {
+  //   name: "Social",
+  //   description: "Social media web app.",
+  //   imagePath: "/social.webp",
+  //   imageAlt: "Social logo",
+  //   projectPagePath: "social",
+  //   githubPath: "https://github.com/MateusTum/social",
+  //   isOpenSource: true,
+  //   version: "1.0.0-alpha",
+  //   techs: [
+  //     "Nextjs",
+  //     "Django",
+  //     "TypeScript",
+  //     "PostgreeSql",
+  //     "Sass",
+  //     "TailwindCSS",
+  //   ],
+  // },
   hais: {
     name: "HAIS",
     description: "Face recognition web app.",
@@ -52,24 +55,24 @@ export const MyProjects: Record<ProjectName, ProjectInfo> = {
     version: "1.0.0-alpha",
     techs: ["Nextjs", "Django", "JavaScript", "MongoDB", "Sass", "TailwindCSS"],
   },
-  taskManager: {
-    name: "Task manager",
-    description: "A webapp used to store and manage tasks.",
-    imagePath: "/taskmanager.webp",
-    imageAlt: "Task manager logo",
-    projectPagePath: "task-manager",
-    githubPath: "https://github.com/MateusTum/task-manager",
-    isOpenSource: true,
-    version: "1.0.0-alpha",
-    techs: [
-      "Nextjs",
-      "Django",
-      "TypeScript",
-      "PostgreeSql",
-      "Sass",
-      "TailwindCSS",
-    ],
-  },
+  // taskManager: {
+  //   name: "Task manager",
+  //   description: "A webapp used to store and manage tasks.",
+  //   imagePath: "/taskmanager.webp",
+  //   imageAlt: "Task manager logo",
+  //   projectPagePath: "task-manager",
+  //   githubPath: "https://github.com/MateusTum/task-manager",
+  //   isOpenSource: true,
+  //   version: "1.0.0-alpha",
+  //   techs: [
+  //     "Nextjs",
+  //     "Django",
+  //     "TypeScript",
+  //     "PostgreeSql",
+  //     "Sass",
+  //     "TailwindCSS",
+  //   ],
+  // },
   ferreiraWebsite: {
     name: "Ferreira's website",
     description: "A lawyer's website with blog functionality.",
@@ -84,9 +87,7 @@ export const MyProjects: Record<ProjectName, ProjectInfo> = {
 };
 
 export const FeaturedProjects: Record<ProjectName, ProjectInfo> = {
-  social: MyProjects.social,
   hais: MyProjects.hais,
-  taskManager: MyProjects.taskManager,
   ferreiraWebsite: MyProjects.ferreiraWebsite,
 };
 
@@ -181,16 +182,35 @@ export const TechList: Record<TechName, TechInfo> = {
     url: "https://tailwindcss.com/",
     icon: siTailwindcss,
   },
+  Springboot: {
+    name: "Spring Boot",
+    description: "Java Framework",
+    url: "https://spring.io/projects/spring-boot",
+    icon: siSpringboot,
+  },
+  Flutter: {
+    name: "Flutter",
+    description: "UI Toolkit",
+    url: "https://flutter.dev/",
+    icon: siFlutter,
+  },
+  AWS: {
+    name: "Amazon AWS",
+    description: "Cloud Computing Services",
+    url: "https://aws.amazon.com/",
+    icon: siAmazonaws,
+  },
 };
 
 export const FeaturedTech: Record<TechName, TechInfo> = {
   TypeScript: TechList.TypeScript,
-  JavaScript: TechList.JavaScript,
   Nextjs: TechList.Nextjs,
   React: TechList.React,
   Python: TechList.Python,
   Django: TechList.Django,
-  Flask: TechList.Flask,
   PostgreeSql: TechList.PostgreeSql,
   MongoDB: TechList.MongoDB,
+  Springboot: TechList.Springboot,
+  Flutter: TechList.Flutter,
+  AWS: TechList.AWS,
 };
