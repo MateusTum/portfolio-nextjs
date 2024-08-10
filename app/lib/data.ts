@@ -81,7 +81,7 @@ export const MyProjects: Record<ProjectName, ProjectInfo> = {
   },
   proCampo: {
     name: "ProCampo by Agrosoft",
-    description: "A web app to manage farms, able to track expenses and provide reports about productivity.",
+    description: "A web app to manage farms, track expenses and provide reports about productivity.",
     imagePath: "/redlamp.webp",
     imageAlt: "A lamp with a red glow",
     projectPagePath: "procampo",
