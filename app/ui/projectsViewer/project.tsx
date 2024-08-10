@@ -42,9 +42,9 @@ class Project extends Component<ProjectProps> {
               <span className="text-2xl px-1 text-white z-10 relative">
                 {project.name}
               </span>
-              <span className="text-lg px-1 text-white z-10 relative rounded-md">
+              {/* <span className="text-lg px-1 text-white z-10 relative rounded-md">
                 {project.version}
-              </span>
+              </span> */}
               <div className="w-full h-[100%] absolute top-0 left-0 bg-gradient-to-t from-25% from-black/50 to-transparent z-5" />
             </div>
 
