@@ -3,7 +3,7 @@ import Image from "next/image";
 import clsx from "clsx";
 
 // Custom next-intl link wrapper
-import { Link } from "@/navigation";
+import Link from "next/link";
 
 // Tech icons
 import { TechList, FeaturedProjects } from "@/app/lib/data";
@@ -28,13 +28,15 @@ export default function PortfolioSection({ t }: any) {
               className="flex-row items-center w-full h-[450px] sm:h-[400px] md:h-[450px] mx-auto rounded-lg overflow-hidden
               hover:ring ring-neutral-500/50"
             >
-              <Link
-                href={{
-                  pathname: "/projects/[projectName]",
-                  params: {
-                    projectName: FeaturedProjects[key].projectPagePath,
-                  },
-                }}
+              <a
+                // href={{
+                //   pathname: "/projects/[projectName]",
+                //   params: {
+                //     projectName: FeaturedProjects[key].projectPagePath,
+                //   },
+                // }}
+                href={FeaturedProjects[key].websitePath}
+                target="_blank"
               >
                 <div className="bg-black h-[80%] w-full relative overflow-hidden ">
                   <Image
@@ -49,9 +51,9 @@ export default function PortfolioSection({ t }: any) {
                     <span className="text-4xl px-1 text-white z-10 relative">
                       {FeaturedProjects[key].name}
                     </span>
-                    <span className="text-lg px-1 text-white z-10 relative rounded-md">
+                    {/* <span className="text-lg px-1 text-white z-10 relative rounded-md">
                       {FeaturedProjects[key].version}
-                    </span>
+                    </span> */}
                     <div className="w-full h-[100%] absolute top-0 left-0 bg-gradient-to-t from-25% from-black/50 to-transparent z-5" />
                   </div>
 
@@ -96,7 +98,7 @@ export default function PortfolioSection({ t }: any) {
                     </p>
                   </div>
                 </div>
-              </Link>
+              </a>
             </li>
           );
         })}

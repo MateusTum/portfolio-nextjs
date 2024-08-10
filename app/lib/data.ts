@@ -24,6 +24,7 @@ import {
   siAmazonaws,
   siFlutter,
   siSpringboot,
+  siDocker,
 } from "simple-icons/icons";
 
 export const MyProjects: Record<ProjectName, ProjectInfo> = {
@@ -45,16 +46,6 @@ export const MyProjects: Record<ProjectName, ProjectInfo> = {
   //     "TailwindCSS",
   //   ],
   // },
-  hais: {
-    name: "HAIS",
-    description: "Face recognition web app.",
-    imagePath: "/hais.webp",
-    imageAlt: "HAIS logo",
-    projectPagePath: "hais",
-    isOpenSource: false,
-    version: "1.0.0-alpha",
-    techs: ["Nextjs", "Django", "JavaScript", "MongoDB", "Sass", "TailwindCSS"],
-  },
   // taskManager: {
   //   name: "Task manager",
   //   description: "A webapp used to store and manage tasks.",
@@ -73,22 +64,60 @@ export const MyProjects: Record<ProjectName, ProjectInfo> = {
   //     "TailwindCSS",
   //   ],
   // },
+
   ferreiraWebsite: {
     name: "Ferreira's website",
     description: "A lawyer's website with blog functionality.",
-    imagePath: "/isaferreira.png",
-    imageAlt: "Ferreira's website logo",
+    // imagePath: "/isaferreira.png",
+    // imageAlt: "Ferreira's website logo",
     projectPagePath: "ferreira-website",
+    imagePath: "/redlamp.webp",
+    imageAlt: "A lamp with a red glow",
     websitePath: "https://isabellaferreira.adv.br",
     isOpenSource: false,
     version: "1.0.6-beta",
     techs: ["Nextjs", "JavaScript", "SQLite", "Sass", "TailwindCSS"],
   },
+  proCampo: {
+    name: "ProCampo by Agrosoft",
+    description: "A web app to manage farms, able to track expenses and provide reports about productivity.",
+    imagePath: "/redlamp.webp",
+    imageAlt: "A lamp with a red glow",
+    projectPagePath: "procampo",
+    websitePath: "https://mateustum.com",
+    isOpenSource: false,
+    version: "x.x.x-beta",
+    techs: ["Springboot", "Flutter", "PostgreeSql", "Docker"],
+  },
+  prdTattoo: {
+    name: "PRD Tattoos website",
+    description: "A tattoo portfolio website, made for Luiza Prado.",
+    imagePath: "/redlamp.webp",
+    imageAlt: "A lamp with a red glow",
+    projectPagePath: "prdatattoo",
+    websitePath: "https://prdtattoo.com",
+    isOpenSource: false,
+    version: "x.x.x-beta",
+    techs: ["Nextjs", "JavaScript", "SQLite", "Sass", "TailwindCSS"],
+  },
+  hais: {
+    name: "HAIS",
+    description: "Face recognition web app.",
+    imagePath: "/redlamp.webp",
+    imageAlt: "A lamp with a red glow",
+    projectPagePath: "hais",
+    websitePath: "https://mateustum.com",
+    isOpenSource: false,
+    version: "1.0.0-alpha",
+    techs: ["Nextjs", "Django", "JavaScript", "MongoDB", "Sass", "TailwindCSS"],
+  },
 };
 
 export const FeaturedProjects: Record<ProjectName, ProjectInfo> = {
-  hais: MyProjects.hais,
+  proCampo: MyProjects.proCampo,
   ferreiraWebsite: MyProjects.ferreiraWebsite,
+  prdTattoo: MyProjects.prdTattoo,
+  hais: MyProjects.hais,
 };
 
 export const TechList: Record<TechName, TechInfo> = {
@@ -200,6 +229,12 @@ export const TechList: Record<TechName, TechInfo> = {
     url: "https://aws.amazon.com/",
     icon: siAmazonaws,
   },
+  Docker: {
+    name: "Docker",
+    description: "Containerization Platform",
+    url: "https://www.docker.com/",
+    icon: siDocker,
+  },
 };
 
 export const FeaturedTech: Record<TechName, TechInfo> = {
@@ -213,4 +248,5 @@ export const FeaturedTech: Record<TechName, TechInfo> = {
   Springboot: TechList.Springboot,
   Flutter: TechList.Flutter,
   AWS: TechList.AWS,
+  Docker: TechList.Docker,
 };
