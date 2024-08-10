@@ -25,6 +25,7 @@ import {
   siFlutter,
   siSpringboot,
   siDocker,
+  siJenkins,
 } from "simple-icons/icons";
 
 export const MyProjects: Record<ProjectName, ProjectInfo> = {
@@ -87,7 +88,7 @@ export const MyProjects: Record<ProjectName, ProjectInfo> = {
     websitePath: "https://mateustum.com",
     isOpenSource: false,
     version: "x.x.x-beta",
-    techs: ["Springboot", "Flutter", "PostgreeSql", "Docker"],
+    techs: ["Springboot", "Flutter", "PostgreeSql", "Docker", "Jenkins"],
   },
   prdTattoo: {
     name: "PRD Tattoos website",
@@ -235,6 +236,12 @@ export const TechList: Record<TechName, TechInfo> = {
     url: "https://www.docker.com/",
     icon: siDocker,
   },
+  Jenkins: {
+    name: "Jenkins",
+    description: "CI/CD Tool",
+    url: "https://www.jenkins.io/",
+    icon: siJenkins,
+  },
 };
 
 export const FeaturedTech: Record<TechName, TechInfo> = {
@@ -249,4 +256,5 @@ export const FeaturedTech: Record<TechName, TechInfo> = {
   Flutter: TechList.Flutter,
   AWS: TechList.AWS,
   Docker: TechList.Docker,
+  Jenkins: TechList.Jenkins,
 };
