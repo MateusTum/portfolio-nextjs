@@ -91,7 +91,7 @@ export const MyProjects: Record<ProjectName, ProjectInfo> = {
     techs: ["Springboot", "Flutter", "PostgreeSql", "Docker", "Jenkins"],
   },
   prdTattoo: {
-    name: "PRD Tattoos website",
+    name: "PRD Tattoo's website",
     description: "A tattoo portfolio website, made for Luiza Prado.",
     imagePath: "/redlamp.webp",
     imageAlt: "A lamp with a red glow",
